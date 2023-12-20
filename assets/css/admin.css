@@ -1,0 +1,35 @@
+@import url(main.css);
+
+.main-container{
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.student{
+    display: flex;
+    padding: 15px;
+    background-color: black;
+    width: 100%;
+}
+
+
+.student-details{
+    width: 22.5%;
+}
+
+.student-details:first-child{
+    width: 10%;
+}

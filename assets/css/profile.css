@@ -1,0 +1,28 @@
+@import url(main.css);
+
+.main-container{
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle-password{
+    width: 70px;
+    border-radius: 5px;
+    padding: 5px 0;
+    background-color: #1B1929;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px black;
+    cursor: pointer;
+}
+
+#toggle-password:hover {
+    background-color: #2A2A2A;
+}

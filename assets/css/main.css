@@ -1,0 +1,164 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    background-color: rgb(19, 19, 19);
+    color: white;
+}
+
+
+/**************************HEADER**************************/
+
+.hover-color{
+    display: none;
+}
+
+header{
+    height: 10vh;
+    background-color: rgb(42, 42, 42);
+    border-bottom: 2px solid #666666;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content a img{
+    height: 7vh;
+    cursor: pointer;
+}
+
+
+/**************************MAIN**************************/
+.logout-button{
+    position: fixed;
+    top: 12.5vh;
+    right: 1vw;
+    padding: 2vh 2vw;
+    background-color: #1B1929;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 4px black;
+}
+
+.logout-button:hover {
+    color: darkorange;
+}
+
+.logState {
+    position: fixed;
+    bottom: 11.5vh;
+    left: 0.5vw;
+    color: rgb(159, 159, 159);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+    color: white !important;
+}
+
+#switchTheme{
+    position: fixed;
+    bottom: 11.5vh;
+    right: 10px;
+    cursor: pointer;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px black; 
+    border-radius: 10px;
+}
+
+input[type='text'], input[type='password']{
+    height: 35px;
+    width: 300px;
+    background-color: #1B1929;
+    border: none;
+    padding: 5px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+}
+
+.input-box img{
+    height: 25px;
+    background-color: #1B1929;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type='submit']{
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1B1929;
+    color: white;
+    cursor: pointer;
+    text-align: end;
+    padding-right: 20px;
+    box-shadow: 0 2px 4px black;  
+}
+
+input[type='submit']:hover{
+    color: darkorange;
+}
+
+form p{
+    font-size: 0.9rem;
+    text-align: end;
+}
+
+form a{
+    color: white;
+}
+
+
+/**************************FOOTER**************************/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(42, 42, 42);
+    color: rgb(200, 200, 200);
+    border-top: 2px solid #666666;
+}
+
+footer a {
+    color: rgb(200, 200, 200);
+}

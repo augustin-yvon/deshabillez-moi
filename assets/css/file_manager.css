@@ -1,0 +1,178 @@
+@import url(./main.css);
+
+.main-container{
+    height: 80vh;
+}
+
+.container{
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5vh;
+    gap: 1vw;
+}
+
+ .upload-container{
+    width: 310px;
+    position: fixed;
+    top: 35vh;
+    right: 2vw;
+}
+
+.upload-container h1{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.accept-files{
+    font-size: 0.85rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-form input[type="file"] {
+    padding-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;
+    background-color: #272727;
+}
+
+.upload-form input[type="file"]::file-selector-button {
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #1B1929;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 15px;
+}
+
+.upload-form input[type="file"]::file-selector-button:hover {
+    color: darkorange;
+}  
+
+.error{
+    font-size: 0.85rem;
+}
+
+.upload-form input[type='submit']{
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #1B1929;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px black;  
+}
+
+.upload-form input[type='submit']:hover{
+    color: darkorange;
+}
+
+
+
+.display-files{
+    background-color: #1B1929;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px black;  
+}
+
+.file-container{
+    max-height: 54vh;
+    overflow-y: auto;
+}
+.file-container::-webkit-scrollbar {
+    width: 8px;
+    padding-right: 5px;
+}
+.file-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+.file-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+.file-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.display-files th{
+    padding-right: 110px;
+    padding-left: 10px;
+    text-align: left;
+    border-left: 1px solid white;
+}
+
+.display-files td{
+    padding-left: 10px;
+    padding-right: 15px;
+    text-align: left;
+}
+
+.delete{
+    color: red;
+    text-decoration: none;
+}
+.download{
+    color: blue;
+    text-decoration: none;
+}
+
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+}
+
+.search_form input[type='text'] {
+    font-size: 1rem;
+    width: 160px;
+    background-color: #1B1929;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 4px black;  
+}
+
+.search_form input[type='submit'] {
+    font-size: 1rem;
+    background-color: #1B1929;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 4px black;
+    cursor: pointer;
+}
+
+.search_form input[type='submit']:hover {
+    color: darkorange;
+}
+
+.stop_search{
+    color: white;
+    background-color: #1B1929;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px black;  
+}
+.stop_search:hover {
+    color: darkorange;
+}
