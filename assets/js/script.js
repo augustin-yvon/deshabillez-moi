@@ -93,8 +93,9 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 //AFFICHER LES ELEMENTS
 const HEADERMAIN = document.querySelector('.header-main');
-const btncrud = document.querySelector('.btn-crud');
 const PRODUCTCONTAINER = document.querySelector('.product-container');
+const CONTAINERPROFIL = document.querySelector('.container-profil');
+const PROFILDRESSING = document.querySelector('.profil-main');
 const ACTIONBTN = document.querySelectorAll('.mobile-bottom-navigation .action-btn');
 
 for (let i = 0; i < ACTIONBTN.length; i++) {
@@ -105,31 +106,41 @@ for (let i = 0; i < ACTIONBTN.length; i++) {
     if (i == 0) {
       HEADERMAIN.style.display = 'block';
       PRODUCTCONTAINER.style.display = 'block';
-      btncrud.style.display = 'none';
+      CONTAINERPROFIL.style.display = 'none';
+      PROFILDRESSING.style.display = 'none';
     }
 
     if (i == 1) {
       HEADERMAIN.style.display = 'block';
       PRODUCTCONTAINER.style.display = 'none';
-      btncrud.style.display = 'none';
+      CONTAINERPROFIL.style.display = 'none';
+      PROFILDRESSING.style.display = 'none';
       console.log('rechercher')
 
     }
     if (i == 2) {
       HEADERMAIN.style.display = 'none';
       PRODUCTCONTAINER.style.display = 'none';
-      btncrud.style.display = 'none';
+      CONTAINERPROFIL.style.display = 'none';
+      PROFILDRESSING.style.display = 'none';
     }
 
     if (i == 3) {
       HEADERMAIN.style.display = 'none';
       PRODUCTCONTAINER.style.display = 'none';
-      btncrud.style.display = 'none';
+      CONTAINERPROFIL.style.display = 'nonr';
+      PROFILDRESSING.style.display = 'none';
     }
     if (i == 4) {
       HEADERMAIN.style.display = 'none';
       PRODUCTCONTAINER.style.display = 'none';
-      btncrud.style.display = 'block';
+      CONTAINERPROFIL.style.display = 'block';
+      PROFILDRESSING.style.display = 'block';
+
+
+
+
+
     }
 
 

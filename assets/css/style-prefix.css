@@ -1519,6 +1519,18 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-main { margin-bottom: 30px; }
 
+.product-dressing{
+ 
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 25px;
+}
+
+.product-dressing .showcase{
+  width: 45vw !important;
+}
+
+
 .product-grid {
   display: flex;
   overflow-x: auto; /* Permet le défilement horizontal */
@@ -1526,7 +1538,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   gap: 10px;
 }
 
-.product-grid .showcase {
+.product-grid .showcase{
   border: 1px solid var(--cultured);
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
@@ -3206,4 +3218,113 @@ footer {
     max-width: 460px;
   }
 
+}
+.profil-main{
+  padding: 20px;
+  display: none;
+
+}
+
+.container-profil {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+ 
+}
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card .card-header {
+  background: url(https://www.wonderbox.fr/blog/wp-content/uploads/sites/4/2020/02/Visiter-Marseille-en-10-lieux-marseille-scaled-1-1-2048x1367.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 130%;
+}
+.card .card-body {
+  height: 40%;
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #80808042;
+}
+.card .card-body::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.card .card-body::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  background: url(https://rvs-profile-card-component-main.netlify.app/images/image-victor.jpg) white;
+  transform: translate(-50%, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.card .card-body .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-footer {
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+
+}
+.card .card-footer .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-footer .inner div:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-bottom: 1px;
+    margin-top: 5px;
+}
+.card .card-footer .inner div:last-child {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.color__gray {
+  color: gray;
+
+}
+
+
+.ville{
+  position: relative;
+  transform: translateY(-75%);
+  color: gray;
 }
