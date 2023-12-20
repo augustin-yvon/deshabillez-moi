@@ -243,7 +243,7 @@ $_SESSION['actual_page'] = $filename;
         </div>
 
         <section class="btn-crud">
-            <?php echo generateLogStateIndex(); ?>
+            <?php echo generateLogState(); ?>
 
             <div class="buttons">
                 <a href="./pages/product.php" class="button">ajouter un produit</a>
