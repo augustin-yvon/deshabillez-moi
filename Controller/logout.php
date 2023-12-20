@@ -10,11 +10,9 @@ if (isset($_SESSION['user'])) {
 
 $fileName = $_SESSION['actual_page'];
 
-if ($fileName == 'profile.php' || $fileName == 'index.php' || $fileName == 'admin.php') {
-    $fileName = '../index.php';
-}else{
-    $fileName = "../View/" . $fileName;
+if ($fileName == 'index.php') {
+    $fileName = '../pages/login.php';
 }
+
 header("Location: $fileName");
 exit();
-?>

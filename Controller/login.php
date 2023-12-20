@@ -1,23 +1,22 @@
 <?php
 require_once '../Model/User.php';
-require_once '../Model/Database.php';
 require_once '../Model/SqlRequest.php';
-
-session_start();
 
 $request = new SqlRequest();
 
 // Vérifie si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupére les données du formulaire
-    $login = htmlspecialchars($_POST["login"]);
+    $username = htmlspecialchars($_POST["username"]);
     $password = htmlspecialchars($_POST["password"]);
 
-    if ($request->checkInfo($login, $password)) {
-        // Crée l'objet utilisateur
-        $user = new User($login, $password);
+    if ($request->checkInfo($username, $password)) {
+        $email = $request->getEmail($username);
 
-        $id = $request->getId($login);
+        // Crée l'objet User
+        $user = new User($username, $email, $password);
+
+        $id = $request->getId($username);
 
         // Ajoute l'id à l'objet utilisateur
         if ($id !== false) {
@@ -29,17 +28,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION["user"] = $user;
 
-        if ($user->getLogin() == 'admiN1337$') {
-            header("Location: ../View/admin.php");
-            exit();
-        }else {
-            header("Location: ../View/profile.php");
-            exit();
-        }
+        header("Location: ../index.php");
+        exit();
     } else {
         $error = "Login ou mot de passe incorrect.";
         $_SESSION['error'] = $error;
-        header("Location: ../View/login.php");
+        header("Location: ../pages/login.php");
         exit();
     }
 }

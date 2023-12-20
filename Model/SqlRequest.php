@@ -31,9 +31,8 @@ class SqlRequest extends Database
     /**
      * Enregistre un nouvel utilisateur dans la base de données.
      *
-     * @param string $login Le nom d'utilisateur
-     * @param string $firstname Le prénom
-     * @param string $lastname Le nom de famille
+     * @param string $username Le nom d'utilisateur
+     * @param string $email L'adresse email
      * @param string $password Le mot de passe
      * @return bool True si l'enregistrement réussit, sinon false.
      */
@@ -76,9 +75,28 @@ class SqlRequest extends Database
     }
 
     /**
+     * Obtient l'username d'un utilisateur par son email.
+     *
+     * @param string $login Le nom d'utilisateur
+     * @return int|false L'identifiant de l'utilisateur s'il existe, sinon false.
+     */
+    public function getEmail(string $username): string|false
+    {
+        $selectIdQuery = "SELECT `email` FROM `user` WHERE `username` = :username";
+
+        $stmt = $this->pdo->prepare($selectIdQuery);
+        $stmt->bindValue(':username', $username, PDO::PARAM_STR);
+        $stmt->execute();
+
+        $result = $stmt->fetchColumn();
+
+        return $result;
+    }
+
+    /**
      * Vérifie si un nom d'utilisateur et un mot de passe correspondent dans la base de données.
      *
-     * @param string $login Le nom d'utilisateur à vérifier.
+     * @param string $username Le nom d'utilisateur à vérifier.
      * @param string $password Le mot de passe à vérifier.
      * @return bool True si les identifiants correspondent, sinon false.
      */
@@ -156,5 +174,73 @@ class SqlRequest extends Database
         } else {
             return false;
         }
+    }
+
+    /**
+     * Insère les données d'un produit dans la table product.
+     *
+     * @param string $titre Le titre du produit
+     * @param string $description La description du produit
+     * @param string $categorie_type Le type de catégorie ('h', 'f', 'e')
+     * @param int $categorie_id L'ID de la sous-catégorie
+     * @param float $prix Le prix du produit
+     * @param int $user_id L'ID de l'utilisateur qui ajoute le produit
+     * @return PDOStatement L'objet de requête préparée.
+     */
+    public function insertProduct(string $titre, string $description, string $categorie_type, int $categorie_id, float $prix, int $user_id): PDOStatement
+    {
+        $insertQuery = "INSERT INTO product (titre, description, categorie_type, categorie_id, prix, user_id) 
+                        VALUES (:titre, :description, :categorie_type, :categorie_id, :prix, :user_id)";
+
+        $stmt = $this->pdo->prepare($insertQuery);
+
+        $stmt->bindValue(':titre', $titre, PDO::PARAM_STR);
+        $stmt->bindValue(':description', $description, PDO::PARAM_STR);
+        $stmt->bindValue(':categorie_type', $categorie_type, PDO::PARAM_STR);
+        $stmt->bindValue(':categorie_id', $categorie_id, PDO::PARAM_INT);
+        $stmt->bindValue(':prix', $prix, PDO::PARAM_STR);
+        $stmt->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+
+        return $stmt;
+    }
+
+    /**
+     * Récupère l'ID d'un produit dans la table product en utilisant le user ID et le titre.
+     *
+     * @param int $user_id L'ID de l'utilisateur associé au produit
+     * @param string $titre Le titre du produit
+     * @return int|null L'ID du produit s'il existe, sinon null.
+     */
+    public function getProductId(int $user_id, string $titre): ?int
+    {
+        $selectQuery = "SELECT id FROM product WHERE user_id = :user_id AND titre = :titre";
+
+        $stmt = $this->pdo->prepare($selectQuery);
+        $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
+        $stmt->bindParam(':titre', $titre, PDO::PARAM_STR);
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        return $result ? (int)$result['id'] : null;
+    }
+
+    /**
+     * Insère le chemin d'une photo dans la table product_photos.
+     *
+     * @param int $product_id L'ID du produit auquel la photo est associée
+     * @param string $photo_path Le chemin de la photo
+     * @return PDOStatement L'objet de requête préparée.
+     */
+    public function insertProductPhoto(int $product_id, string $photo_path): PDOStatement
+    {
+        $insertQuery = "INSERT INTO product_photos (product_id, chemin_photo) VALUES (:product_id, :chemin_photo)";
+
+        $stmt = $this->pdo->prepare($insertQuery);
+
+        $stmt->bindValue(':product_id', $product_id, PDO::PARAM_INT);
+        $stmt->bindValue(':chemin_photo', $photo_path, PDO::PARAM_STR);
+
+        return $stmt;
     }
 }

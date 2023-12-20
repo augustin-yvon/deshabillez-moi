@@ -6,6 +6,9 @@ session_start();
 
 if (isset($_SESSION['errors'])) {
 	$errors = $_SESSION['errors'];
+	echo $errors;
+	// a cette classe .cd-signin-modal ajouter la classe cd-signin-modal--is-visible
+	//  a  cette classe  cd-signin-modal__block ajouter .cd-signin-modal__block--is-selected
 }
 unset($_SESSION['errors']);
 ?>
@@ -22,6 +25,7 @@ unset($_SESSION['errors']);
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+	<link rel="stylesheet" href="css/custom.css"> <!-- Demo style -->
 
 	<title>Log In &amp; Sign Up Form | CodyHouse</title>
 </head>
@@ -44,16 +48,16 @@ unset($_SESSION['errors']);
 			</ul>
 
 			<div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
-				<form class="cd-signin-modal__form">
+				<form class="cd-signin-modal__form" method="post" action="../Controller/login.php">
 					<p class="cd-signin-modal__fieldset">
 						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
-						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" name="email" type="email" placeholder="E-mail">
 						<span class="cd-signin-modal__error">Error message here!</span>
 					</p>
 
 					<p class="cd-signin-modal__fieldset">
 						<label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
-						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" type="text" placeholder="Password">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" name="password" type="text" placeholder="Password">
 						<a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
 						<span class="cd-signin-modal__error">Error message here!</span>
 					</p>
