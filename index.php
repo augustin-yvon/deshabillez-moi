@@ -1,6 +1,5 @@
 <?php
 require_once './Model/user.php';
-require_once './html-element/logState.php';
 
 session_start();
 
@@ -44,8 +43,6 @@ $_SESSION['actual_page'] = $filename;
 </head>
 
 <body>
-
-
     <div class="overlay" data-overlay></div>
 
     <!-- HEADER -->
@@ -417,44 +414,7 @@ $_SESSION['actual_page'] = $filename;
 
         </nav>
 
-        <div class="mobile-bottom-navigation">
-            <a href="./index.php" class="action-btn">
-                <ion-icon name="home-outline"></ion-icon>
-            </a>
-
-            <a href="./View/search.php" class="action-btn">
-                <ion-icon name="search-outline"></ion-icon>
-            </a>
-
-            <a href="./View/product.php" class="action-btn">
-                <ion-icon name="add-outline"></ion-icon>
-            </a>
-
-            <a href="./View/contact.php" class="action-btn">
-                <ion-icon name="mail-outline"></ion-icon>
-
-                <span class="count">3</span>
-            </a>
-
-            <a href="./View/profile.php" class="action-btn">
-                <ion-icon name="person-outline"></ion-icon>
-
-                <span class="count">1</span>
-            </a>
-
-            <!-- Pour déployer menu utiliser data-mobile-menu-open-btn
-                <button class="action-btn" data-mobile-menu-open-btn>
-                    <ion-icon name="mail-outline"></ion-icon>
-
-                    <span class="count">3</span>
-                </button>
-
-                <button class="action-btn" data-mobile-menu-open-btn>
-                    <ion-icon name="person-outline"></ion-icon>
-                    <span class="count">1</span>
-                </button>
-            -->
-        </div>
+        <?php include_once './html-element/mobile-nav.php'; ?>
 
         <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
             <div class="menu-top">
