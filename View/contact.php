@@ -1153,7 +1153,7 @@ $_SESSION['actual_page'] = $filename;
 
         <div class="footer-bottom">
             <div class="container">
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="../assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.

@@ -3,3 +3,10 @@
 .header-logo-margin {
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+    .page-title-margin {
+        padding-top: 0.6rem;
+    }
+   
+}

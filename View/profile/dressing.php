@@ -296,7 +296,7 @@ $_SESSION['actual_page'] = $filename;
             <div class="card-header"></div>
             <div class="card-body">
                 <div class="inner">
-                    <div style="font-size: 18px;letter-spacing: .5px;margin-bottom: 10px;">Victor Crest<span class="color__gray" style="margin-left: 10px;">26</span></div>
+                    <div style="font-size: 18px;letter-spacing: .5px;margin-bottom: 10px;"><?php echo $_SESSION['user']->getUsername() ?><span class="color__gray" style="margin-left: 10px;">26</span></div>
                     <div class="ville" style="font-size: 13px;letter-spacing: .5px;">London</div>
                 </div>
             </div>

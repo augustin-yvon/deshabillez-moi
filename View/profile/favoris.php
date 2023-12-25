@@ -29,7 +29,6 @@ $_SESSION['actual_page'] = $filename;
 
     <!-- custom css link -->
     <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="../../assets/css/profile_favoris.css">
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -665,7 +664,7 @@ $_SESSION['actual_page'] = $filename;
 
                     <div class="product-main">
 
-                        <h2 class="title favoris-title">Tes favoris</h2>
+                        <h2 class="title page-title-margin">Tes favoris</h2>
 
                         <div class="product-grid">
 

@@ -389,7 +389,7 @@ $_SESSION['actual_page'] = $filename;
         <div class="profil-infos">
             <img src="../assets/images/logo/pp.jpg" alt="Profile Picture" class="profile-picture">
             <div class="profil-details">
-                <p class="username">Votre Pseudo</p>
+                <p class="username"><?php echo $_SESSION['user']->getUsername() ?></p>
                 <a href="profile/dressing.php" class="view-profile">Voir mon profil</a>
             </div>
         </div>
@@ -676,7 +676,7 @@ $_SESSION['actual_page'] = $filename;
 
         <div class="footer-bottom">
             <div class="container">
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="../assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.
