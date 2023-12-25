@@ -23,39 +23,45 @@ unset($_SESSION['errors']);
 </head>
 
 <body>
-    <div class="container">
-        <form id="form" class="form" method="post" action="../Controller/register.php">
-            <h2>Inscription</h2>
-            <div class="form-control">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" placeholder="">
-            </div>
-            <div class="form-control">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="">
-            </div>
-            <div class="form-control">
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" placeholder="">
-            </div>
-            <div class="form-control">
-                <label for="password2">Confirmer le mot de passe</label>
-                <input type="password" id="password2" name="confirm-password" placeholder="">
-            </div>
+    <main class="register-main">
+        <a href="#" class="header-logo">
+            <img src="../assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
+        </a>
 
-            <?php if (!empty($errors)) : ?>
-                <div class="error">
-                    <?php foreach ($errors as $error) : ?>
-                        <p><?php echo $error; ?></p>
-                    <?php endforeach; ?>
+        <div class="container">
+            <form id="form" class="form" method="post" action="../Controller/register.php">
+                <h2>Inscription</h2>
+                <div class="form-control">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" placeholder="">
                 </div>
-            <?php endif; ?>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="">
+                </div>
+                <div class="form-control">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" placeholder="">
+                </div>
+                <div class="form-control">
+                    <label for="password2">Confirmer le mot de passe</label>
+                    <input type="password" id="password2" name="confirm-password" placeholder="">
+                </div>
 
-            <button>Submit</button>
+                <?php if (!empty($errors)) : ?>
+                    <div class="error">
+                        <?php foreach ($errors as $error) : ?>
+                            <p><?php echo $error; ?></p>
+                        <?php endforeach; ?>
+                    </div>
+                <?php endif; ?>
 
-            <p class="link">Déjà inscrit ? <a href="./login.php">Connectez-vous !</a></p>
-        </form>
-    </div>
+                <button>S'incrire</button>
+
+                <p class="link">Déjà inscrit ? <a href="./login.php">Connectez-vous !</a></p>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>

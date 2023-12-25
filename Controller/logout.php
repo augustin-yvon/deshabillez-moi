@@ -8,11 +8,13 @@ if (isset($_SESSION['user'])) {
     $user->logOut();
 }
 
-$fileName = $_SESSION['actual_page'];
+// $fileName = $_SESSION['actual_page'];
 
-if ($fileName == 'index.php') {
-    $fileName = '../pages/login.php';
-}
+// if ($fileName == 'index.php') {
+//     $fileName = '../pages/login.php';
+// }
 
-header("Location: $fileName");
+// header("Location: $fileName");
+
+header("Location: ../pages/login.php");
 exit();

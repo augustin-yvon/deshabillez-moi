@@ -7,7 +7,6 @@
     <title>Ajouter un produit</title>
 
     <script defer src="../assets/js/product.js"></script>
-
 </head>
 
 <body>
@@ -52,8 +51,6 @@
         <!-- Bouton de soumission -->
         <input type="submit" value="Ajouter le produit">
     </form>
-
-    <!-- Script JavaScript pour gérer la mise à jour dynamique de la sous-catégorie -->
 </body>
 
 </html>
