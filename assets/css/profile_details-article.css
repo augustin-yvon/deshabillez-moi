@@ -1,0 +1,60 @@
+.detailsarticles {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.imgDetails {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-container img {
+    width: 100%;
+    /* Ajustez la largeur selon vos besoins */
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+    /* Espace entre les images */
+}
+
+.infosArticles {
+    padding: 20px;
+}
+
+.ajouterPanier {
+    border: 1px solid black;
+
+    padding: 10px;
+    /* Ajoutez un espace à l'intérieur du bouton si nécessaire */
+    text-align: center;
+    /* Centre le texte à l'intérieur du bouton */
+    text-decoration: none;
+    /* Supprime le soulignement par défaut des liens */
+    display: inline-block;
+    /* Fait en sorte que le bouton se comporte comme un élément en ligne avec une largeur fixe */
+    background-color: #ffffff;
+    /* Couleur de fond du bouton (vous pouvez ajuster selon vos préférences) */
+    color: #000000;
+    /* Couleur du texte du bouton (vous pouvez ajuster selon vos préférences) */
+    cursor: pointer;
+    /* Change le curseur au survol du bouton */
+    border-radius: 4px;
+    /* Ajoute un peu de bord arrondi au bouton */
+    margin-top: 10px;
+}
+
+/* Style pour le survol du bouton */
+.ajouterPanier:hover {
+    background-color: #000000;
+    /* Couleur de fond au survol (vous pouvez ajuster selon vos préférences) */
+    color: #ffffff;
+    /* Couleur du texte au survol (vous pouvez ajuster selon vos préférences) */
+}
+
+
+/* Ajoutez des styles supplémentaires selon vos besoins */

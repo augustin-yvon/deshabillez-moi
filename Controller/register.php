@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         $_SESSION['errors'] = $errors;
-        header("Location: ../pages/register.php");
+        header("Location: ../View/register.php");
         exit();
     }
 }

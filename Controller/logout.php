@@ -16,5 +16,5 @@ if (isset($_SESSION['user'])) {
 
 // header("Location: $fileName");
 
-header("Location: ../pages/login.php");
+header("Location: ../View/login.php");
 exit();

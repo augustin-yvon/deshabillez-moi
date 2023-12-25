@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $error = "Login ou mot de passe incorrect.";
         $_SESSION['error'] = $error;
-        header("Location: ../pages/login.php");
+        header("Location: ../View/login.php");
         exit();
     }
 }

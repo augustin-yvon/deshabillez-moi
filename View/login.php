@@ -19,7 +19,6 @@ unset($_SESSION['error']);
     <title>Document</title>
 
     <link rel="stylesheet" href="../assets/css/log.css">
-    <!-- <script defer src="../assets/js/notConnected.js"></script> -->
 </head>
 
 <body>

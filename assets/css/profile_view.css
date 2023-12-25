@@ -1,0 +1,31 @@
+.profil-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 600px;
+
+}
+
+.profil-infos {
+    display: flex;
+    margin: 20px;
+}
+
+
+.profil-options img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.textLogo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid black;
+}
+
+.textLogo a {
+    margin: 10px;
+    color: black;
+}

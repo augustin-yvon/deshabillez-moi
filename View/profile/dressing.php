@@ -1,15 +1,15 @@
 <?php
-require_once './Model/user.php';
-require_once './html-element/logState.php';
+require_once '../../Model/user.php';
+require_once '../../html-element/logState.php';
 
 session_start();
 
 if (isset($_SESSION['user'])) {
     if ($_SESSION['user']->getLogState() == false) {
-        header('Location: ./pages/register.php');
+        header('Location: ../register.php');
     }
 } else {
-    header('Location: ./pages/register.php');
+    header('Location: ../register.php');
 }
 
 $filename = basename($_SERVER['REQUEST_URI']);
@@ -24,78 +24,71 @@ $_SESSION['actual_page'] = $filename;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anon - eCommerce Website</title>
 
-    <!--
-    - favicon
-  -->
-    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo/favicon.ico" type="image/x-icon">
 
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="../../assets/css/style-prefix.css">
 
-    <!--
-    - google font link
-  -->
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- custom js link -->
+    <script defer src="../../assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
-
-
     <div class="overlay" data-overlay></div>
 
-
-    <!--
-    - HEADER
-  -->
+    <!-- HEADER -->
 
     <header>
         <div class="mobile-bottom-navigation">
-
-            <a href="./index.php" class="action-btn">
+            <a href="../../index.php" class="action-btn">
                 <ion-icon name="home-outline"></ion-icon>
             </a>
 
-            <a href="./search.php" class="action-btn">
+            <a href="../search.php" class="action-btn">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
 
-            <a href="./pages/product.php" class="action-btn">
+            <a href="../product.php" class="action-btn">
                 <ion-icon name="add-outline"></ion-icon>
             </a>
 
-            <a href="./contact.php" class="action-btn">
+            <a href="../contact.php" class="action-btn">
                 <ion-icon name="mail-outline"></ion-icon>
 
                 <span class="count">3</span>
             </a>
 
-            <a href="./profiloptions.php" class="action-btn">
+            <a href="../profile.php" class="action-btn">
                 <ion-icon name="person-outline"></ion-icon>
 
                 <span class="count">1</span>
             </a>
+
             <!-- Pour déployer menu utiliser data-mobile-menu-open-btn
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="mail-outline"></ion-icon>
+                <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="mail-outline"></ion-icon>
 
-        <span class="count">3</span>
-      </button>
+                    <span class="count">3</span>
+                </button>
 
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="person-outline"></ion-icon>
-        <span class="count">1</span>
-      </button>-->
-
+                <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="count">1</span>
+                </button>
+            -->
         </div>
 
-
         <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
-
             <div class="menu-top">
                 <h2 class="menu-title">Menu</h2>
 
@@ -332,13 +325,9 @@ $_SESSION['actual_page'] = $filename;
             </div>
 
         </nav>
-
     </header>
 
-
-    <!--
-            - PROFIL
-          -->
+    <!-- PROFIL -->
 
     <div class="container-profil">
         <div class="card">
@@ -365,6 +354,7 @@ $_SESSION['actual_page'] = $filename;
             </div>
         </div>
     </div>
+
     <div class="profil-main">
 
         <h2 class="title">Tes articles disponibles</h2>
@@ -490,22 +480,14 @@ $_SESSION['actual_page'] = $filename;
 
     </div>
 
-
-
-    <!--
-    - FOOTER
-  -->
+    <!-- FOOTER -->
 
     <footer>
-
         <div class="footer-category">
-
             <div class="container">
-
                 <h2 class="footer-category-title">Brand directory</h2>
 
                 <div class="footer-category-box">
-
                     <h3 class="category-box-title">Fashion :</h3>
 
                     <a href="#" class="footer-category-link">T-shirt</a>
@@ -515,7 +497,6 @@ $_SESSION['actual_page'] = $filename;
                     <a href="#" class="footer-category-link">dress & frock</a>
                     <a href="#" class="footer-category-link">innerwear</a>
                     <a href="#" class="footer-category-link">hosiery</a>
-
                 </div>
 
                 <div class="footer-category-box">
@@ -569,17 +550,12 @@ $_SESSION['actual_page'] = $filename;
                     <a href="#" class="footer-category-link">liner</a>
                     <a href="#" class="footer-category-link">lipstick</a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="footer-nav">
-
             <div class="container">
-
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Popular Categories</h2>
                     </li>
@@ -603,11 +579,9 @@ $_SESSION['actual_page'] = $filename;
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Watches</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Products</h2>
                     </li>
@@ -631,11 +605,9 @@ $_SESSION['actual_page'] = $filename;
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Sitemap</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Our Company</h2>
                     </li>
@@ -659,11 +631,9 @@ $_SESSION['actual_page'] = $filename;
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Secure payment</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Services</h2>
                     </li>
@@ -687,11 +657,9 @@ $_SESSION['actual_page'] = $filename;
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">Sitemap</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Contact</h2>
                     </li>
@@ -722,11 +690,9 @@ $_SESSION['actual_page'] = $filename;
 
                         <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
                     </li>
-
                 </ul>
 
                 <ul class="footer-nav-list">
-
                     <li class="footer-nav-item">
                         <h2 class="nav-title">Follow Us</h2>
                     </li>
@@ -762,43 +728,20 @@ $_SESSION['actual_page'] = $filename;
                     </li>
 
                 </ul>
-
             </div>
 
         </div>
 
         <div class="footer-bottom">
-
             <div class="container">
-
                 <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.
                 </p>
-
             </div>
-
         </div>
-
     </footer>
-
-
-
-
-
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

@@ -24,23 +24,23 @@ $_SESSION['actual_page'] = $filename;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anon - eCommerce Website</title>
 
-    <!--
-    - favicon
-  -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
-    <!--
-    - custom css link
-  -->
+    <!-- custom css link -->
     <link rel="stylesheet" href="./assets/css/style-prefix.css">
 
-    <!--
-    - google font link
-  -->
+    <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- custom js link -->
+    <script defer src="./assets/js/script.js"></script>
+
+    <!-- ionicon link -->
+    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
@@ -48,12 +48,9 @@ $_SESSION['actual_page'] = $filename;
 
     <div class="overlay" data-overlay></div>
 
-    <!--
-    - HEADER
-  -->
+    <!-- HEADER -->
 
     <header>
-
         <div class="header-top">
 
             <div class="container">
@@ -421,47 +418,45 @@ $_SESSION['actual_page'] = $filename;
         </nav>
 
         <div class="mobile-bottom-navigation">
-
             <a href="./index.php" class="action-btn">
                 <ion-icon name="home-outline"></ion-icon>
             </a>
 
-            <a href="./search.php" class="action-btn">
+            <a href="./View/search.php" class="action-btn">
                 <ion-icon name="search-outline"></ion-icon>
             </a>
 
-            <a href="./pages/product.php" class="action-btn">
+            <a href="./View/product.php" class="action-btn">
                 <ion-icon name="add-outline"></ion-icon>
             </a>
 
-            <a href="./contact.php" class="action-btn">
+            <a href="./View/contact.php" class="action-btn">
                 <ion-icon name="mail-outline"></ion-icon>
 
                 <span class="count">3</span>
             </a>
 
-            <a href="./profiloptions.php" class="action-btn">
+            <a href="./View/profile.php" class="action-btn">
                 <ion-icon name="person-outline"></ion-icon>
 
                 <span class="count">1</span>
             </a>
+
             <!-- Pour déployer menu utiliser data-mobile-menu-open-btn
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="mail-outline"></ion-icon>
+                <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="mail-outline"></ion-icon>
 
-        <span class="count">3</span>
-      </button>
+                    <span class="count">3</span>
+                </button>
 
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="person-outline"></ion-icon>
-        <span class="count">1</span>
-      </button>-->
-
+                <button class="action-btn" data-mobile-menu-open-btn>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="count">1</span>
+                </button>
+            -->
         </div>
 
-
         <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
-
             <div class="menu-top">
                 <h2 class="menu-title">Menu</h2>
 
@@ -698,7 +693,6 @@ $_SESSION['actual_page'] = $filename;
             </div>
 
         </nav>
-
     </header>
 
 
@@ -2914,23 +2908,6 @@ $_SESSION['actual_page'] = $filename;
         </div>
 
     </footer>
-
-
-
-
-
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
