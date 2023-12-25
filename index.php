@@ -28,7 +28,7 @@ $_SESSION['actual_page'] = $filename;
     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style-prefix.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,7 +117,7 @@ $_SESSION['actual_page'] = $filename;
 
             <div class="container">
 
-                <a href="#" class="header-logo">
+                <a href="#" class="header-logo header-logo-margin">
                     <img src="./assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
                 </a>
 

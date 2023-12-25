@@ -29,7 +29,7 @@ $_SESSION['actual_page'] = $filename;
     <link rel="shortcut icon" href="../../assets/images/logo/favicon.ico" type="image/x-icon">
 
     <!-- custom css link -->
-    <link rel="stylesheet" href="../../assets/css/style-prefix.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../assets/css/profile_favoris.css">
 
     <!-- google font link -->
