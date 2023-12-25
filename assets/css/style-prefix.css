@@ -185,7 +185,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 
 
-
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -530,8 +529,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 20px 0;
   border-bottom: 1px solid var(--cultured);
 }
-
-.header-logo { margin-bottom: 20px; }
 
 .header-logo img { margin: auto; }
 

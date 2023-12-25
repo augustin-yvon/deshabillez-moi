@@ -30,6 +30,7 @@ $_SESSION['actual_page'] = $filename;
 
     <!-- custom css link -->
     <link rel="stylesheet" href="../../assets/css/style-prefix.css">
+    <link rel="stylesheet" href="../../assets/css/profile_favoris.css">
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -116,8 +117,8 @@ $_SESSION['actual_page'] = $filename;
 
             <div class="container">
 
-                <a href="#" class="header-logo">
-                    <img src="../assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
+                <a href="#" class="header-logo header-logo-favoris">
+                    <img src="../../assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
                 </a>
 
                 <div class="header-user-actions">
@@ -702,7 +703,7 @@ $_SESSION['actual_page'] = $filename;
 
                     <div class="product-main">
 
-                        <h2 class="title">Tes favoris</h2>
+                        <h2 class="title favoris-title">Tes favoris</h2>
 
                         <div class="product-grid">
 
@@ -710,8 +711,8 @@ $_SESSION['actual_page'] = $filename;
 
                                 <div class="showcase-banner">
 
-                                    <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
-                                    <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                                    <img src="../../assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                                    <img src="../../assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
 
                                     <p class="showcase-badge">15%</p>
 
@@ -765,8 +766,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300">
-                                    <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle black">sale</p>
 
@@ -816,8 +817,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default" width="300">
-                                    <img src="./assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover" width="300">
 
                                     <div class="showcase-actions">
                                         <button class="btn-action">
@@ -865,8 +866,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default" width="300">
-                                    <img src="./assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle pink">new</p>
 
@@ -916,8 +917,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/shoe-2.jpg" alt="Casual Men's Brown shoes" class="product-img default" width="300">
-                                    <img src="./assets/images/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/shoe-2.jpg" alt="Casual Men's Brown shoes" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes" class="product-img hover" width="300">
 
                                     <div class="showcase-actions">
                                         <button class="btn-action">
@@ -965,8 +966,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/watch-3.jpg" alt="Pocket Watch Leather Pouch" class="product-img default" width="300">
-                                    <img src="./assets/images/products/watch-4.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/watch-3.jpg" alt="Pocket Watch Leather Pouch" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/watch-4.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle black">sale</p>
 
@@ -1016,8 +1017,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus" class="product-img default" width="300">
-                                    <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
 
                                     <div class="showcase-actions">
                                         <button class="btn-action">
@@ -1065,8 +1066,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" class="product-img default" width="300">
-                                    <img src="./assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle black">sale</p>
 
@@ -1116,8 +1117,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets" class="product-img default" width="300">
-                                    <img src="./assets/images/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets" class="product-img hover" width="300">
 
                                     <div class="showcase-actions">
                                         <button class="btn-action">
@@ -1165,8 +1166,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black" class="product-img default" width="300">
-                                    <img src="./assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle black">sale</p>
 
@@ -1216,8 +1217,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default" width="300">
-                                    <img src="./assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover" width="300">
 
                                     <div class="showcase-actions">
                                         <button class="btn-action">
@@ -1265,8 +1266,8 @@ $_SESSION['actual_page'] = $filename;
                             <div class="showcase">
 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts" class="product-img default" width="300">
-                                    <img src="./assets/images/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts" class="product-img hover" width="300">
+                                    <img src="../../assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts" class="product-img default" width="300">
+                                    <img src="../../assets/images/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts" class="product-img hover" width="300">
 
                                     <p class="showcase-badge angle black">sale</p>
 
@@ -1329,7 +1330,7 @@ $_SESSION['actual_page'] = $filename;
                                 <div class="showcase">
                                 
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                                    <img src="../../assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
                                 </div>
 
                                 <div class="showcase-content">
@@ -1419,7 +1420,7 @@ $_SESSION['actual_page'] = $filename;
                                 <div class="showcase">
                             
                                 <div class="showcase-banner">
-                                    <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
+                                    <img src="../../assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" class="showcase-img">
                                 </div>
                             
                                 <div class="showcase-content">
@@ -1518,13 +1519,13 @@ $_SESSION['actual_page'] = $filename;
 
                             <div class="testimonial-card">
 
-                            <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
+                            <img src="../../assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80">
 
                             <p class="testimonial-name">Alan Doe</p>
 
                             <p class="testimonial-title">CEO & Founder Invision</p>
 
-                            <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+                            <img src="../../assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
 
                             <p class="testimonial-desc">
                                 Lorem ipsum dolor sit amet consectetur Lorem ipsum
@@ -1539,7 +1540,7 @@ $_SESSION['actual_page'] = $filename;
                     <!-- CTA
                         <div class="cta-container">
 
-                            <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
+                            <img src="../../assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner">
 
                             <a href="#" class="cta-content">
 
@@ -1659,7 +1660,7 @@ $_SESSION['actual_page'] = $filename;
                 <div class="blog-card">
 
                     <a href="#">
-                    <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+                    <img src="../../assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
                     </a>
 
                     <div class="blog-content">
@@ -1681,7 +1682,7 @@ $_SESSION['actual_page'] = $filename;
                 <div class="blog-card">
                 
                     <a href="#">
-                    <img src="./assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                    <img src="../../assets/images/blog-2.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
                         class="blog-banner" width="300">
                     </a>
                 
@@ -1704,7 +1705,7 @@ $_SESSION['actual_page'] = $filename;
                 <div class="blog-card">
                 
                     <a href="#">
-                    <img src="./assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
+                    <img src="../../assets/images/blog-3.jpg" alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
                         class="blog-banner" width="300">
                     </a>
                 
@@ -1727,7 +1728,7 @@ $_SESSION['actual_page'] = $filename;
                 <div class="blog-card">
                 
                     <a href="#">
-                    <img src="./assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
+                    <img src="../../assets/images/blog-4.jpg" alt="Curbside fashion Trends: How to Win the Pickup Battle."
                         class="blog-banner" width="300">
                     </a>
                 
@@ -2010,7 +2011,7 @@ $_SESSION['actual_page'] = $filename;
 
         <div class="footer-bottom">
             <div class="container">
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="../../assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.

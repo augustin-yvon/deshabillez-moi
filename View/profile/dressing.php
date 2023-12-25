@@ -365,8 +365,8 @@ $_SESSION['actual_page'] = $filename;
 
                 <div class="showcase-banner">
 
-                    <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
-                    <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+                    <img src="../../assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                    <img src="../../assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
                     <p class="showcase-badge angle pink">new</p>
 
                 </div>
@@ -378,8 +378,6 @@ $_SESSION['actual_page'] = $filename;
                     <a href="#">
                         <h3 class="showcase-title">Mens Winter </h3>
                     </a>
-
-
 
                     <div class="price-box">
                         <p class="price">$48.00</p>
@@ -393,11 +391,11 @@ $_SESSION['actual_page'] = $filename;
             <div class="showcase">
 
                 <div class="showcase-banner">
-                    <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300">
-                    <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300">
+
+                    <img src="../../assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default" width="300">
+                    <img src="../../assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover" width="300">
 
                     <p class="showcase-badge angle black">sale</p>
-
 
                 </div>
 
@@ -407,8 +405,6 @@ $_SESSION['actual_page'] = $filename;
                     <h3>
                         <a href="#" class="showcase-title">Pure Garment </a>
                     </h3>
-
-
 
                     <div class="price-box">
                         <p class="price">$45.00</p>
@@ -422,9 +418,9 @@ $_SESSION['actual_page'] = $filename;
             <div class="showcase">
 
                 <div class="showcase-banner">
-                    <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default" width="300">
-                    <img src="./assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover" width="300">
 
+                    <img src="../../assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default" width="300">
+                    <img src="../../assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover" width="300">
 
                 </div>
 
@@ -434,8 +430,6 @@ $_SESSION['actual_page'] = $filename;
                     <h3>
                         <a href="#" class="showcase-title">MEN Yarn </a>
                     </h3>
-
-
 
                     <div class="price-box">
                         <p class="price">$58.00</p>
@@ -449,10 +443,9 @@ $_SESSION['actual_page'] = $filename;
             <div class="showcase">
 
                 <div class="showcase-banner">
-                    <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default" width="300">
-                    <img src="./assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover" width="300">
 
-
+                    <img src="../../assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img default" width="300">
+                    <img src="../../assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" class="product-img hover" width="300">
 
                 </div>
 
@@ -463,8 +456,6 @@ $_SESSION['actual_page'] = $filename;
                         <a href="#" class="showcase-title">Black Floral</a>
                     </h3>
 
-
-
                     <div class="price-box">
                         <p class="price">$25.00</p>
                         <del>$35.00</del>
@@ -473,9 +464,6 @@ $_SESSION['actual_page'] = $filename;
                 </div>
 
             </div>
-
-
-
         </div>
 
     </div>
@@ -734,7 +722,7 @@ $_SESSION['actual_page'] = $filename;
 
         <div class="footer-bottom">
             <div class="container">
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="../../assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.

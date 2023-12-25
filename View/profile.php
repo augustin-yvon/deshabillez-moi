@@ -30,7 +30,7 @@ $_SESSION['actual_page'] = $filename;
 
     <!-- custom css link -->
     <link rel="stylesheet" href="../assets/css/style-prefix.css">
-    <link rel="stylesheet" href="../assets/css/profile_view.css">
+    <link rel="stylesheet" href="../assets/css/profile.css">
 
     <!-- google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

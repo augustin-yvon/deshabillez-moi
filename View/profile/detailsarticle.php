@@ -118,7 +118,7 @@ $_SESSION['actual_page'] = $filename;
             <div class="container">
 
                 <a href="#" class="header-logo">
-                    <img src="../assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
+                    <img src="../../assets/images/logo/logo-deshabillez.PNG" alt="Anon's logo" width="120" height="36">
                 </a>
 
                 <div class="header-user-actions">
@@ -690,9 +690,9 @@ $_SESSION['actual_page'] = $filename;
     <main class="detailsarticles">
         <div class="imgDetails">
             <div class="image-container">
-                <img src="assets/images/products/jacket-1.jpg" alt="Image 1">
-                <img src="assets/images/products/jacket-1.jpg" alt="Image 1">
-                <img src="assets/images/products/jacket-1.jpg" alt="Image 1">
+                <img src="../../assets/images/products/jacket-1.jpg" alt="Image 1">
+                <img src="../../assets/images/products/jacket-1.jpg" alt="Image 1">
+                <img src="../../assets/images/products/jacket-1.jpg" alt="Image 1">
 
             </div>
         </div>
@@ -960,7 +960,7 @@ $_SESSION['actual_page'] = $filename;
 
         <div class="footer-bottom">
             <div class="container">
-                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+                <img src="../../assets/images/payment.png" alt="payment method" class="payment-img">
 
                 <p class="copyright">
                     Copyright &copy; <a href="#">DÉSHABILLEZ MOI</a> all rights reserved.
