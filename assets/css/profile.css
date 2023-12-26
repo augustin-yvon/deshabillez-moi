@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 600px;
-
+    margin-top: 15%;
 }
 
 .profil-infos {
@@ -28,4 +27,14 @@
 .textLogo a {
     margin: 10px;
     color: black;
+}
+
+.view-profile {
+    font-size: 0.8rem;
+}
+
+.profil-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

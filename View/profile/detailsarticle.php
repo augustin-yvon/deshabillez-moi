@@ -122,19 +122,29 @@ $_SESSION['actual_page'] = $filename;
 
                 <div class="header-user-actions">
 
-                    <button class="action-btn">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </button>
+                    <a href="../../index.php" class="action-btn">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </a>
 
-                    <button class="action-btn">
+                    <a href="../profile.php" class="action-btn">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </a>
+
+                    <a href="../profile/favoris.php" class="action-btn">
                         <ion-icon name="heart-outline"></ion-icon>
                         <span class="count">0</span>
-                    </button>
+                    </a>
 
-                    <button class="action-btn">
+                    <a href="../shopping-cart.php" class="action-btn">
                         <ion-icon name="bag-handle-outline"></ion-icon>
                         <span class="count">0</span>
-                    </button>
+                    </a>
+
+                    <a href="../contact.php" class="action-btn">
+                        <ion-icon name="mail-outline"></ion-icon>
+
+                        <span class="count">3</span>
+                    </a>
 
                 </div>
 
